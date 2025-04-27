@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import video from '../assets/videos/sea-beach.mp4';
 import room from '../assets/images/luxury-room.jpg';
 import pool from '../assets/images/pool.jpg';
@@ -66,9 +67,9 @@ function Home() {
       <section className="bg-blue-400 text-white py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">Book Your Stay Today</h2>
         <p className="mb-6">Escape to paradise at Ocean Breeze Villa. Limited rooms available!</p>
-        <a href="/contact" className="bg-white text-blue-400 px-6 py-3 rounded font-semibold hover:bg-gray-200">
+        <Link to="/contact" className="bg-white text-blue-400 px-6 py-3 rounded font-semibold hover:bg-gray-200">
           Contact Us
-        </a>
+        </Link>
       </section>
     </div>
   );

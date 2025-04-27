@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import pic from "../assets/images/about.jpg";
 import sea from '../assets/videos/sea.mp4';
 
@@ -155,12 +156,12 @@ function About() {
           to our Unawatuna paradise.
         </p>
         <div className="flex justify-center">
-          <a
-            href="/contact"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
-          >
+        <Link
+        to="/contact"  
+        className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+      >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>
