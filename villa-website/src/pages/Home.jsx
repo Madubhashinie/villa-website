@@ -20,12 +20,17 @@ function Home() {
         />
 
         {/* Overlay and Content */}
-        <div className="absolute inset-0 bg-opacity-50 flex flex-col items-center">
-        <div className="text-center text-white mt-40">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Sea Beach Villa</h1>
-            <p className="text-lg md:text-xl">Experience the serenity and comfort of the Sri Lankan sea</p>
-          </div>
-        </div>
+<div className="absolute inset-0 bg-black/20 flex flex-col items-center justify-center">
+  <div className="text-center text-white drop-shadow-lg">
+    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+      Welcome to <span className="text-blue-300">Sea Beach Villa</span>
+    </h1>
+    <p className="text-lg md:text-2xl font-medium text-white/90">
+      Experience the serenity and comfort of the Sri Lankan sea
+    </p>
+  </div>
+</div>
+
     </section>
 
 

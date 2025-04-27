@@ -1,4 +1,5 @@
-import pic from "../assets/images/about.jpg"
+import pic from "../assets/images/about.jpg";
+import sea from '../assets/videos/sea.mp4';
 
 function About() {
   return (
@@ -79,8 +80,19 @@ function About() {
         </div>
 
         {/* Testimonial */}
-        <div className="bg-blue-600 text-white rounded-xl p-8 md:p-12">
-          <div className="max-w-4xl mx-auto text-center">
+        <div className="relative bg-blue-600 text-white rounded-xl p-8 md:p-12">
+        
+          <video
+            className="absolute inset-0 w-full h-full object-cover opacity-60"
+            autoPlay
+            loop
+            muted
+          >
+            <source src={sea} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className="relative z-10 max-w-4xl mx-auto text-center">
             <svg
               className="w-12 h-12 mx-auto mb-4 text-blue-300"
               fill="currentColor"
@@ -100,6 +112,7 @@ function About() {
             </div>
           </div>
         </div>
+
       </section>
 
       {/* Local Experiences */}

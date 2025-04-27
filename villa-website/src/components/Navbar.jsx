@@ -55,7 +55,7 @@ function Navbar() {
 
           <Link 
             to="/contact" 
-            className="ml-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
+            className="ml-2 bg-blue-400 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
           >
             Contact
           </Link>
@@ -95,7 +95,7 @@ function Navbar() {
             
             <Link 
               to="/contact" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium text-center mt-2"
+              className="bg-blue-400 hover:bg-blue-600 text-white px-4 py-2 rounded-md font-medium text-center mt-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
@@ -114,7 +114,7 @@ function NavLink({ children, to, isActive, isScrolled }) {
       to={to}
       className={`px-3 py-2 rounded-full font-medium transition-all duration-300 ${
         isActive
-          ? `${isScrolled ? 'text-blue-600 bg-blue-50' : 'text-white bg-white bg-opacity-20'}`
+          ? `${isScrolled ? 'text-blue-600 bg-blue-50' : 'text-white bg-transparent bg-opacity-20'}`
           : `${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-black hover:text-blue-600'}`
 
       }`}
