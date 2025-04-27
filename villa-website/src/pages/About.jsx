@@ -35,7 +35,7 @@ function About() {
           </div>
           <div className="rounded-xl overflow-hidden shadow-xl transform md:translate-y-6">
             <img
-              src="/images/villa-exterior.jpg" // Replace with your image path
+              src="/images/villa-exterior.jpg" 
               alt="Villa Exterior"
               className="w-full h-full object-cover"
               onError={(e) => {
@@ -132,23 +132,25 @@ function About() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gray-100 py-16">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Experience Sea Beach Villa?</h2>
-          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-            Contact us today to inquire about availability and discover why our guests keep coming back year after year
-            to our Unawatuna paradise.
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
-            >
-              Contact Us
-            </a>
-          </div>
+    <section className="bg-gradient-to-r from-blue-100 to-blue-200 py-20">
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-6 leading-tight">
+          Ready to Experience <span className="text-blue-600">Sea Beach Villa?</span>
+        </h2>
+        <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+          Contact us today to inquire about availability and discover why our guests keep coming back year after year
+          to our Unawatuna paradise.
+        </p>
+        <div className="flex justify-center">
+          <a
+            href="/contact"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            Contact Us
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   )
 }
@@ -216,28 +218,6 @@ function FeatureCard({ icon, title, description }) {
       </div>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
-    </div>
-  )
-}
-
-// Team Member Component
-function TeamMember({ name, role, image }) {
-  return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-1">
-      <div className="h-64 overflow-hidden">
-        <img
-          src={image || "/placeholder.svg?height=300&width=300"}
-          alt={name}
-          className="w-full h-full object-cover"
-          onError={(e) => {
-            e.target.src = "/placeholder.svg?height=300&width=300" // Fallback to placeholder
-          }}
-        />
-      </div>
-      <div className="p-4 text-center">
-        <h3 className="font-semibold text-lg text-gray-800">{name}</h3>
-        <p className="text-blue-600">{role}</p>
-      </div>
     </div>
   )
 }

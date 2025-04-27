@@ -21,7 +21,7 @@ function Contact() {
     e.preventDefault();
     const subject = `Message from ${formData.name} (${formData.email})`;
     const body = encodeURIComponent(formData.message);
-    const mailtoLink = `mailto:madubhashinietharushi@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const mailtoLink = `mailto:info@seabeachvilla.com?subject=${encodeURIComponent(subject)}&body=${body}`;
 
     window.location.href = mailtoLink;
     setStatus('Opening your email app...');

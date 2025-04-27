@@ -31,26 +31,31 @@ function Home() {
 
 
       {/* Highlights */}
-      <section className="py-12 px-4 md:px-16 text-center bg-gray-100">
-        <h2 className="text-3xl font-semibold mb-8">Why Choose Us?</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
-          <img src={room} alt="Luxury Accommodations" className="mb-4 rounded-lg" />
-            <h3 className="text-xl font-semibold mb-2">Luxury Rooms</h3>
-            <p>Spacious, sea-view rooms with top-tier amenities for your comfort.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
-          <img src={pool} alt="Luxury Accommodations" className="mb-4 rounded-lg" />
-            <h3 className="text-xl font-semibold mb-2">Private Pool</h3>
-            <p>Relax in your own private pool, perfect for quiet getaways and family fun.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
-          <img src={view} alt="Luxury Accommodations" className="mb-4 rounded-lg" />
-            <h3 className="text-xl font-semibold mb-2">Nature Views</h3>
-            <p>Wake up to palm trees, ocean breeze, and birdsong in a peaceful setting.</p>
-          </div>
+    <section className="py-16 px-6 md:px-20 bg-gray-100 text-center">
+      <h2 className="text-4xl font-bold mb-12 text-gray-800">Why Choose Us?</h2>
+      <div className="grid gap-10 md:grid-cols-3">
+      
+        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src={room} alt="Luxury Rooms" className="w-full h-48 object-cover rounded-xl mb-6" />
+          <h3 className="text-2xl font-semibold mb-4 text-blue-600">Luxury Rooms</h3>
+          <p className="text-gray-600">Spacious, sea-view rooms with top-tier amenities for your comfort.</p>
         </div>
-      </section>
+
+        
+        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src={pool} alt="Private Pool" className="w-full h-48 object-cover rounded-xl mb-6" />
+          <h3 className="text-2xl font-semibold mb-4 text-blue-600">Private Pool</h3>
+          <p className="text-gray-600">Relax in your own private pool, perfect for quiet getaways and family fun.</p>
+        </div>
+
+      
+        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src={view} alt="Nature Views" className="w-full h-48 object-cover rounded-xl mb-6" />
+          <h3 className="text-2xl font-semibold mb-4 text-blue-600">Nature Views</h3>
+          <p className="text-gray-600">Wake up to palm trees, ocean breeze, and birdsong in a peaceful setting.</p>
+        </div>
+      </div>
+    </section>
 
       {/* Call to Action */}
       <section className="bg-blue-400 text-white py-12 text-center">
