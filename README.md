@@ -46,7 +46,7 @@ It features a modern UI, working contact form (that sends emails), and an embedd
    npm start
    ```
 
-4. **Open** [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. **Open** [http://localhost:5173](http://localhost:5173) to view it in your browser.
 
 ## 🌎 Deployment
 The frontend is deployed on **Netlify**.
